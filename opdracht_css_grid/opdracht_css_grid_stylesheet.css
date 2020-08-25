@@ -1,0 +1,28 @@
+.container 
+    {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    }
+
+.header { grid-area: 1 / 1 / 2 / 4;
+        background-color: blueviolet;
+      }
+.menu {   grid-area: 2 / 1 / 5 / 2; 
+        background-color: lightpink
+      }
+.content {  grid-area: 5 / 1 / 6 / 4;
+        background-color: orange }
+
+.footer { grid-area: 2 / 2 / 5 / 4; 
+        background-color: rgb(224, 26, 142);}
+
+}
+.body {background-color: grey}
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: red;
+    }
+  }
